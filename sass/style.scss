@@ -1,0 +1,245 @@
+@import "normalize";
+// @import "compass";
+
+
+//variables
+// $default-box-shadow-blur: 20px;
+
+$blue: #80d5ff;
+$teal: #80ffdf;
+$green: #79d279;
+$gold: #ffdb4d;
+$sand: #ffff99;
+
+
+//mixin for button styles
+@mixin btn {
+  font-size: 2em;
+  display: block;
+  margin: auto;
+  background: transparent;
+  border: 5px solid darken($blue, 15%);
+  color: darken($blue, 15%);
+  border-radius: 7px;
+  &:hover, &:active, &:visited, &:focus {
+    background-color: $teal;
+    border-color: darken($blue, 20%);
+    color: white;
+    box-shadow: 0 0 15px #999;
+    transition: all .2s ease-in-out;
+  }
+}
+
+
+// navigation styles
+nav{
+//no top navigation in this site
+}
+
+//header styles
+header {
+  width: 100%;
+
+  .head_img {
+    background-image: url(../images/eyeSyrumBackground.png);
+    height: 1100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .head_text {
+    // font-size: 5em;
+    margin-top:170px;
+    h1 {
+      font-size: 4em;
+      color: darken($teal, 30%);
+    }
+    p {
+      font-size: 3em;
+      padding-left: 10%;
+    }
+  }
+  .buyNowButton {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 150px;
+    line-height: normal;
+    button {
+      background: transparent;
+      padding: 17px;
+      border-radius: 10px;
+      border: 3px solid darken($teal, 40%);
+
+      transition: all .3s ease-in-out;
+      &:hover, &:active, &:visited, &:focus {
+        background-color: $teal;
+        border-color: $blue;
+        box-shadow: 0 0 30px gray;
+      }
+    }
+  }
+}
+
+//content styles
+.main-content{
+  .iconSet {
+    margin: 0 0 7%;
+    img {
+      display: block;
+      width: 50%;
+      margin: -5% auto 5%;
+    }
+    h2, p {
+      text-align: center;
+    }
+    h2 {
+      font-size: 3em;
+      color: darken($blue, 15%);
+    }
+    p {
+      font-size: 2em;
+    }
+  }
+  .before_after {
+    p {
+
+
+    }
+    .dont {
+      color: red;
+      p {
+        font-size: 3.5em;
+        margin-top: 40%;
+      }
+    }
+    .remove {
+      color: $green;
+      p {
+        font-size: 5em;
+        margin-top: 50%;
+      }
+    }
+  }
+  .coverUp {
+    border-radius: 7px;
+    box-shadow: 0 0 20px gray;
+    margin-top: 60px;
+    img {
+      width: 100%;
+      border: 2px solid #eee;
+    }
+  }
+  .formGroup {
+    margin-top: 5%;
+    img {
+      border-left: 25px solid $blue;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      box-shadow: -10px 0 5px gray;
+    }
+    form {
+      margin-top: 1%;
+      button {
+        @include btn;
+      }
+    }
+  }
+}
+
+//product section
+.bottomImage img {
+  width: 100%;
+}
+
+// footer styles
+footer {
+  .copyright {
+    background-color: $teal;
+    font-size: 2em;
+    padding: 10px 0;
+  }
+  .copyText {
+    font-size: .7em;
+  }
+  .ingredients {
+    padding: 30px 30px 0;
+  }
+  .disclaimer {
+    padding: 0 30px 30px;
+  }
+}
+
+// other page styling
+
+
+
+//media-queries
+@media only screen and (max-width: 500px) {
+  .head_text {
+    // font-size: 5em;
+    margin-top:17px;
+    h1 {
+      padding-left: 5%;
+      font-size: .3em;
+    }
+    p {
+      padding-left: 10%;
+      font-size: .2em;
+    }
+  }
+  .main-content {
+    .creamImage {
+      width: 100% !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .head_text {
+    // font-size: 5em;
+    margin-top:17px;
+    margin-bottom: 0;
+    h1 {
+      padding-left: 10%;
+      font-size: 2.5em !important;
+    }
+    p {
+      padding-left: 20%;
+      font-size: 2em !important;
+    }
+  }
+
+  .main-content {
+    .before_after {
+      p {
+        font-size: 2.2em;
+        margin-top: 5% !important;
+      }
+    }
+
+  }
+  .buyNowButton {
+    button {
+      background-color: $blue !important;
+      margin-top: -95px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .buyNowButton {
+    button {
+      background-color: lighten($blue, 10%) !important;
+      margin-top: 10px;
+    }
+  }
+  header.container-fluid {
+    padding: 0;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .iconSet {
+    margin-top: -10%;
+
+  }
+}
