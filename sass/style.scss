@@ -219,7 +219,50 @@ footer {
   .buyNowButton {
     button {
       background-color: $blue !important;
-      margin-top: -95px !important;
+      margin-top: -95px;
+    }
+  }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+  .head_text {
+    // font-size: 5em;
+    margin-top:5px;
+    font-size: .6em;
+    h1 {
+      margin-left: 50%;
+      font-size: .5em;
+    }
+    p {
+      margin-left: 48%;
+      font-size: .4em;
+    }
+  }
+  .main-content {
+    .creamImage {
+      width: 100% !important;
+    }
+    .iconSet {
+      margin-top: -10%;
+    }
+  }
+}
+
+@media (min-width:1201px) and (max-width:1566px) {
+  header {
+    .head_text {
+      margin-top: 5%;
+    }
+  }
+  .buyNowButton {
+    button {
+      display: absolute;
+      top: -100px;
+    }
+  }
+  .main-content {
+    .iconSet {
+      margin-top: 10%;
     }
   }
 }
@@ -227,19 +270,23 @@ footer {
 @media only screen and (max-width: 1600px) {
   .buyNowButton {
     button {
+      position: relative;
       background-color: lighten($blue, 10%) !important;
-      margin-top: 10px;
     }
   }
   header.container-fluid {
     padding: 0;
-    height: 800px;
+    height: 900px;
   }
-}
-
-@media (min-width: 1200px) {
-  .iconSet {
-    margin-top: -10%;
+  .formGroup form {
 
   }
+
 }
+//
+// @media (min-width: 1200px) {
+//   .iconSet {
+//     margin-top: 10% auto !important;
+//
+//   }
+// }

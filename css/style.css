@@ -484,17 +484,39 @@ footer .disclaimer {
 
   .buyNowButton button {
     background-color: #80d5ff !important;
-    margin-top: -95px !important; } }
+    margin-top: -95px; } }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .head_text {
+    margin-top: 5px;
+    font-size: .6em; }
+    .head_text h1 {
+      margin-left: 50%;
+      font-size: .5em; }
+    .head_text p {
+      margin-left: 48%;
+      font-size: .4em; }
+
+  .main-content .creamImage {
+    width: 100% !important; }
+  .main-content .iconSet {
+    margin-top: -10%; } }
+@media (min-width: 1201px) and (max-width: 1566px) {
+  header .head_text {
+    margin-top: 5%; }
+
+  .buyNowButton button {
+    display: absolute;
+    top: -100px; }
+
+  .main-content .iconSet {
+    margin-top: 10%; } }
 @media only screen and (max-width: 1600px) {
   .buyNowButton button {
-    background-color: #b3e6ff !important;
-    margin-top: 10px; }
+    position: relative;
+    background-color: #b3e6ff !important; }
 
   header.container-fluid {
     padding: 0;
-    height: 800px; } }
-@media (min-width: 1200px) {
-  .iconSet {
-    margin-top: -10%; } }
+    height: 900px; } }
 
 /*# sourceMappingURL=style.css.map */
