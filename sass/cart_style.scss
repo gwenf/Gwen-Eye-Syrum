@@ -1,0 +1,74 @@
+@import "style";
+
+
+
+header.head_img {
+  position:absolute;
+  top: 0;
+}
+
+.cart {
+
+  // width: 30%;
+  h1 {
+    // text-align: center;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  .inner-cart {
+    padding: 5%;
+  }
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  section {
+    border: 7px solid $teal;
+    border-radius: 7px;
+  }
+}
+
+
+.creditForm {
+  margin: 1%;
+
+  button {
+    @include btn;
+    padding: 10px;
+    margin: 0;
+  }
+  legend {
+    text-align: center;
+    font-size: 3.5em;
+    color: darken($blue, 10%);
+  }
+  form {
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .creditForm {
+    legend {
+      font-size: 2em;
+    }
+    .cart {
+      font-size: .7em;
+    }
+  }
+}
+
+@media only screen and (min-width:520px) and (max-width: 992px){
+  .bottomImage {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .creditForm {
+    form {
+      margin-top: 5%;
+    }
+  }
+}
