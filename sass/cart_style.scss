@@ -1,7 +1,6 @@
 @import "style";
 
 
-
 header.head_img {
   position:absolute;
   top: 0;
@@ -37,6 +36,9 @@ header.head_img {
     @include btn;
     padding: 10px;
     margin: 0;
+    &:hover {
+      cursor: pointer;
+    }
   }
   legend {
     text-align: center;
